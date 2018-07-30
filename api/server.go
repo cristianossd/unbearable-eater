@@ -16,7 +16,7 @@ func Server() *echo.Echo {
 
     // Crawler api
     crawlerApiGroup := e.Group("")
-    crawlerApiGroup.GET("/calories", getCalories)
+    crawlerApiGroup.GET("/macros", getMacros)
 
     return e
 }
